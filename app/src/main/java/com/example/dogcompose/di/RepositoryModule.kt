@@ -1,6 +1,7 @@
 package com.example.dogcompose.di
 
 import com.example.dogcompose.data.repository.ImagesRepositoryImpl
+import com.example.dogcompose.domain.repository.BreedsRepository
 import com.example.dogcompose.domain.repository.ImagesRepository
 import dagger.Binds
 import dagger.Module
@@ -18,4 +19,9 @@ abstract class RepositoryModule {
         imagesRepositoryImpl: ImagesRepositoryImpl
     ): ImagesRepository
 
+    @Singleton
+    @Binds
+    abstract fun bindsBreedsRepository(
+        breedsRepository: BreedsRepository
+    ): BreedsRepository
 }
