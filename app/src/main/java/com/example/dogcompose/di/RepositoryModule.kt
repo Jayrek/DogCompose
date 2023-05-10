@@ -1,5 +1,6 @@
 package com.example.dogcompose.di
 
+import com.example.dogcompose.data.repository.BreedsRepositoryImpl
 import com.example.dogcompose.data.repository.ImagesRepositoryImpl
 import com.example.dogcompose.domain.repository.BreedsRepository
 import com.example.dogcompose.domain.repository.ImagesRepository
@@ -22,6 +23,6 @@ abstract class RepositoryModule {
     @Singleton
     @Binds
     abstract fun bindsBreedsRepository(
-        breedsRepository: BreedsRepository
+        breedsRepositoryImpl: BreedsRepositoryImpl
     ): BreedsRepository
 }

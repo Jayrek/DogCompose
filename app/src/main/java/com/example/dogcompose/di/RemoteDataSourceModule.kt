@@ -1,6 +1,7 @@
 package com.example.dogcompose.di
 
 import com.example.dogcompose.data.datasource.remote.breeds.BreedsDataSource
+import com.example.dogcompose.data.datasource.remote.breeds.BreedsDataSourceImpl
 import com.example.dogcompose.data.datasource.remote.images.ImagesDataSource
 import com.example.dogcompose.data.datasource.remote.images.ImagesDataSourceImpl
 import dagger.Binds
@@ -22,6 +23,6 @@ abstract class RemoteDataSourceModule {
     @Singleton
     @Binds
     abstract fun bindsBreedsDataSource(
-        breedsDataSource: BreedsDataSource
+        breedsDataSourceImpl: BreedsDataSourceImpl
     ): BreedsDataSource
 }

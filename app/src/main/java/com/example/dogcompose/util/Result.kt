@@ -1,4 +1,4 @@
-package com.example.dogcompose.common
+package com.example.dogcompose.util
 
 import java.lang.Exception
 

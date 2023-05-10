@@ -13,5 +13,5 @@ interface ApiInterface {
     @GET("breeds")
     suspend fun getBreeds(
         @Query("limit") limit: Int, @Query("page") page: Int
-    ): Response<Breeds>
+    ): Breeds
 }
